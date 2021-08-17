@@ -16,7 +16,7 @@ connection = requests.get(OWM_ENDPOINT, params=weather_params)
 connection.raise_for_status()
 weather_data = connection.json()
 
-# for each_hour in range(13):
-weather_codes = [weather_data["hourly"][each_hour]["weather"][0]["id"] for each_hour in range(13)]
+hours = weather_data["hourly"][:12]
+weather_codes = [each_hour["weather"][0]["id"] for each_hour in hours]
 if any(weather_code < 600 for weather_code in weather_codes):
     print("Bring an umbrella!")
