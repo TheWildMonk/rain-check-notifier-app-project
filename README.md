@@ -7,12 +7,14 @@ weather forecast.</br> </br>
 ![Password Manager](image.jpg) <br/>
 
 ### <u>**Libraries Used:**</u> <br />
-Requests<br/>
+os <br/>
+python-dotenv <br/>
+requests <br/>
+twilio.rest <br/>
 
 ### <u>**API:**</u> <br />
 [Open Weather Mobile App](https://openweathermap.org/) <br/>
 [Twilio](https://www.twilio.com/)
-
 
 ### <u>**Project:**</u> <br/>
 Rain Check Notifier App Project<br/>
