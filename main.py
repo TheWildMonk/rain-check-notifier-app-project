@@ -4,8 +4,7 @@ from dotenv import load_dotenv
 from twilio.rest import Client
 
 # Constants
-load_dotenv("/Volumes/Workstation/Learning Center/Data Science/"
-            "100 Days of Code - Complete Python Pro Bootcamp 2021/Projects/@CREDENTIALS/.env")
+load_dotenv("[.env_DIRECTORY_PATH]/.env")
 OWM_ENDPOINT = "https://api.openweathermap.org/data/2.5/onecall"
 API_KEY = os.getenv("OWM_API_KEY")
 ACCOUNT_SID = os.getenv("TWILIO_SID")
